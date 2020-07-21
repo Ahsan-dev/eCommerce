@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProductManageActivity">
+
+    <TextView
+        android:id="@+id/admin_manage_categoryTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I am the Admin"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        />
+
+
+    <ScrollView
+        android:layout_above="@id/admin_manage_modify_product_BtnId"
+        android:layout_below="@id/admin_manage_categoryTextId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/admin_manage_ProductImgId"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/select_product_image" />
+
+                <EditText
+                    android:id="@+id/admin_manage_ProductNameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/admin_manage_ProductImgId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_back_register"
+                    android:hint="Product Name..."
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/admin_manage_ProductDetailsId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/admin_manage_ProductNameId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_back_register"
+                    android:hint="Product Details..."
+                    android:padding="25dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/admin_manage_ProductPriceId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/admin_manage_ProductDetailsId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_back_register"
+                    android:hint="Product Price..."
+                    android:padding="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="30dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/admin_manage_modify_product_BtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/admin_manage_delete_product_BtnId"
+        android:text="Modify Product"
+        android:textAllCaps="false"
+        android:background="#3B752C"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="6dp"
+        />
+    <Button
+        android:id="@+id/admin_manage_delete_product_BtnId"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:text="Delete Product"
+        android:textAllCaps="false"
+        android:background="#F60A11"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="6dp"
+        />
+
+
+</RelativeLayout>
